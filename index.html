@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
     <title>Responsive</title>
 </head>
 <body>
   <header class="page-header">
-<nav class="navbar">
+<nav class="navbar container">
     <picture class="navbar__logo">
         <a href="index.html">
-            <img src="img/logo_funko.jpg" alt="logo de la marca funko">
+            <img src="img/logo_fun.png" alt="logo de la marca funko">
         </a>
     </picture>
-<ul class="navbar__menu">
-<li class="navbar__iten">
-    <a href="pages/shop.html" class="navbar__link">SHOP</a>
+<ul class="navbar__menu with--submenu">
+<li class="navbar__iten with__submenu">
+    <a href="pages/shop.html" class="navbar__link with__icon">SHOP
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+        <ul class="submenu">
+        <li class="submenu__item"><a href="" class="submenu__link">funkos</a>
+        </li>
+        <li class="submenu__item"><a href="" class="submenu__link">remeras</a>
+        </li>
+        <li class="submenu__item"><a href="" class="submenu__link">llaveros</a>
+        </li>
+        </ul>
 </li>
 <li class="navbar__iten">
     <a href="pages/contacto.html" class="navbar__link">CONTACTO</a>

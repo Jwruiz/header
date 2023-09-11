@@ -1,0 +1,75 @@
+.page-header{
+    background-color: rgba(0, 0, 0, 0.985);
+    color: white;
+    font-size: 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{   
+    width: 100%;
+}
+ul, ol{
+    list-style-type: none;
+}
+.navbar__logo{
+    max-width: 100px;
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar__link{
+    font-size: 15px;
+    padding: 8px 16px 8px 16px;
+    transition: backgraund 0.5s ease-in-out;
+}
+.navbar__link:hover{
+    background-color: rgba(255, 0, 0, 0.748);
+}
+.submenu{
+    display: none;
+    width: 300px;
+    font-size: 15px;
+    background-color:rgba(0, 0, 0, 0.987);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.submenu__item{
+    position: relative;
+    justify-content: left;
+}
+
+.submenu__link{
+    display: block;
+    align-items: start;
+    padding: 8px 16px 8px 16px;
+    margin: 0;
+}
+.submenu__link:hover{
+    background-color: rgba(255, 0, 0, 0.748);
+}
+.navbar__item{
+    position: relative;
+    padding: 8px 16px 8px 16px;
+}
+.with__icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.with__icon:hover + .submenu{
+    display: block;
+}
+.with--submenu:hover .submenu{
+    display: block;
+}
