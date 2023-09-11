@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 img{   
     width: 100%;
@@ -72,4 +73,13 @@ ul, ol{
 }
 .with--submenu:hover .submenu{
     display: block;
+}
+@media (max-width:802px){
+    .navbar{
+        justify-content: center;
+        gap: 20px;
+}
+@media (max-width:440px){
+    .navbar__menu{
+        display: none;
 }
