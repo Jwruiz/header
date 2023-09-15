@@ -1,6 +1,5 @@
 .page-header{
-    background-color: rgba(0, 0, 0, 0.985);
-    color: white;
+    background-color: rgba(30, 29, 29, 0.934);
     font-size: 20px;
 }
 .container{
@@ -17,9 +16,6 @@
 img{   
     width: 100%;
 }
-ul, ol{
-    list-style-type: none;
-}
 .navbar__logo{
     max-width: 100px;
 }
@@ -31,16 +27,18 @@ ul, ol{
 .navbar__link{
     font-size: 15px;
     padding: 8px 16px 8px 16px;
-    transition: backgraund 0.5s ease-in-out;
+    transition: backgraund 2s ease-in-out;
+    text-decoration: none;
+    color: white;
 }
 .navbar__link:hover{
     background-color: rgba(255, 0, 0, 0.748);
 }
 .submenu{
     display: none;
-    width: 300px;
+    width: 100px;
     font-size: 15px;
-    background-color:rgba(0, 0, 0, 0.987);
+    background-color: black;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -55,6 +53,8 @@ ul, ol{
     align-items: start;
     padding: 8px 16px 8px 16px;
     margin: 0;
+    text-decoration: none;
+    color: white;
 }
 .submenu__link:hover{
     background-color: rgba(255, 0, 0, 0.748);
@@ -67,6 +67,7 @@ ul, ol{
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
 }
 .with__icon:hover + .submenu{
     display: block;
@@ -84,4 +85,8 @@ ul, ol{
     .navbar__menu{
     display: none;
     }
+}
+li{
+    list-style: none;
+    text-decoration: none;
 }
