@@ -141,3 +141,37 @@ li{
 .hero__link:hover{
     background-color: rgba(255, 0, 0, 0.748);
 }
+/*colecciones*/
+.collection{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.collection__content{
+    display: flexbox;
+    padding: 30px;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+    align-items: start;
+}
+.collection__text{
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid red;
+    padding-bottom: 8px;
+}
+.collection__link{
+    display: inline-block;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 12px 12px;
+    border-radius: 40%;
+    transition: .3s;
+}
+.collection__link:hover{
+    background-color: rgba(255, 0, 0, 0.748);
+}
